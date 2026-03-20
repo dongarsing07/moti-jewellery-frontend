@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -16,16 +16,31 @@ const Footer = () => {
               Handcrafted Moti jewellery preserving the legacy of traditional Indian craftsmanship since 2014.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-primary transition">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary transition">
+              {/* Instagram Link */}
+              <a 
+                href="https://www.instagram.com/handmade_moti_jewellery5" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-primary transition"
+                aria-label="Instagram"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-primary transition">
-                <Twitter className="w-5 h-5" />
+              {/* WhatsApp Group Invitation Link */}
+              <a 
+                href="https://chat.whatsapp.com/Ism0qTyqmdvISuW63IsCXN?mode=gi_t" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-green-600 transition"
+                aria-label="WhatsApp Group"
+              >
+                <MessageCircle className="w-5 h-5" />
               </a>
             </div>
+            {/* Optional: display Instagram username for easy copy */}
+            <p className="text-xs text-gray-500 mt-2">
+              Instagram: <span className="font-medium">@handmade_moti_jewellery5</span>
+            </p>
           </div>
 
           {/* Quick Links */}

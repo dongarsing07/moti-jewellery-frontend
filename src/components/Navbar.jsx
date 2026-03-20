@@ -100,7 +100,6 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* Home, Shop, Categories, Features, About, Contact (unchanged) */}
             <motion.div whileHover={{ y: -2 }}>
               <Link to="/" className="text-textDark hover:text-primary transition font-medium relative group">
                 Home
@@ -375,25 +374,6 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </div>
-
-      {/* Floating WhatsApp Button for Mobile */}
-      <motion.div 
-        className="md:hidden fixed bottom-4 right-4 z-50"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <a
-          href="https://wa.me/919876543210"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition flex items-center justify-center"
-        >
-          <MessageCircle className="w-6 h-6" />
-        </a>
-      </motion.div>
     </nav>
   );
 };
