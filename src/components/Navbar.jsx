@@ -326,8 +326,8 @@ const Navbar = () => {
                 </div>
 
                 <a 
-                  href="https://wa.me/919876543210" 
-                  target="_blank" 
+                  href="https://wa.me/917756025758"
+                target="_blank" 
                   rel="noopener noreferrer"
                   className="block py-2 text-textDark hover:text-primary flex items-center"
                 >
